@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/ppt.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Piedra, Papel o Tijera</title>
+</head>
+<body>
+    <div class="principal">
+        <h1>PIEDRA, PAPEL, TIJERA, LAGARTO, SPOCK</h1>
+        <section class="elijePersonaje" id="seleccionarPersonaje">
+            <h2>Elije tu personaje:</h2>
+            
+            <div class="personajes">
+                <input type="radio" name="personaje" id="sheldon">
+                <label class="cardPersonajes" for="sheldon"><img src="./assets/img/sheldon.png">SHELDON</label>
+                
+                <input type="radio" name="personaje" id="leonard">
+                <label class="cardPersonajes" for="leonard"><img src="./assets/img/leonard.png"> LEONARD</label>
+                
+                <input type="radio" name="personaje" id="howard">
+                <label class="cardPersonajes" for="howard"><img src="./assets/img/howard.png">HOWARD</label>
+                
+                <input type="radio" name="personaje" id="rajesh">  
+                <label class="cardPersonajes" for="rajesh"><img src="./assets/img/rajesh.png">RAJESH</label>
+                
+            </div>
+            <button class="botonSeleccionar" id="botonPersonaje">A JUGAR!</button>
+        </section>
+
+        <section id="seleccionarAtaque">
+
+            <h2>Elije tu Ataque:</h2>
+
+            <h3>REGLAS</h3>
+
+            <p class="reglas">Piedra aplasta Lagarto y Piedra rompe Tijera</p>
+            <p class="reglas">Papel envuelve Piedra y Papel desautoriza Spock</p>
+            <p class="reglas">Tijera corta Papel y Tijera decapita Lagarto</p>
+            <p class="reglas">Lagarto devora Papel y Lagarto envenena a Spock</p>
+            <p class="reglas">Spock rompe Tijera y Spock vaporiza Piedra</p>
+
+            <div class="botonesAtaque">
+                <button class="btnAtaque" id="botonPiedra"><img class="imgAtaque" src="./assets/img/piedra.png">PIEDRA</button>
+                <button class="btnAtaque" id="botonPapel"><img class="imgAtaque" src="./assets/img/papel.png">PAPEL</button>
+                <button class="btnAtaque" id="botonTijera"><img class="imgAtaque" src="./assets/img/tijera.png"> TIJERA</button>
+                <button class="btnAtaque" id="botonLagarto"><img class="imgAtaque" src="./assets/img/lagarto.png">LAGARTO</button>
+                <button class="btnAtaque" id="botonSpock"><img class="imgAtaque" src="./assets/img/spock.png">SPOCK </button>
+            </div>
+
+            <div class="infoCombate">
+                <section id="mensajes">
+                    <p id="resultado"></p>
+                </section>
+
+            
+                <section id="reiniciar">
+                    <button id="botonReiniciar">Reiniciar</button>
+                </section>
+            </div>
+            
+
+            <div class="contenedorInfoJugadores">
+
+                <div class="infoJugadores" id="ataquesDelJugador">
+                    <h4><span id="vidasJugador">3</span></h4>
+                    <p><span id="personajeJugador"></span></p>
+                </div>
+                
+                <div class="infoJugadores" id="ataquesDelOponente">
+                    <h4><span id="vidasOponente">3</span></h4>
+                    <p><span id="personajeOponente"></span> </p>
+                </div>   
+                
+            </div>
+            
+            
+
+            
+        
+        </section>
+    </div>
+</body>
+</html>
